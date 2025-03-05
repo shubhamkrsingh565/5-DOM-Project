@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add friend feature with same button - 5 DOM Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy';
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: cornflowerblue;
+        }
+        #card {
+            height: 410px;
+            width: 320px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+        }
+        #card img {
+            height: 56%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+        #card h1 {
+            font-size: 30px;
+            /* font-weight: 900; */
+            margin: 10px 0;
+        }
+        #card h5 {
+            font-size: 25px;
+            color: red;
+            margin-bottom: 20px;
+        }
+        #card button {
+            background-color: cadetblue;
+            color: #fff;
+            font-weight: 700;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #card #remove {
+            background-color: #dadada;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card">
+        <img src="https://images.unsplash.com/photo-1514069419621-1adbe445edf1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h1>Lady Gaga</h1>
+        <h5>Stranger</h5>
+        <div id="btn-container">
+            <!-- <button id="remove">Remove</button> -->
+            <button id="add">Add Friend</button>
+        </div>
+    </div>
+    
+    <script src="01script.js"></script>
+</body>
+</html> 

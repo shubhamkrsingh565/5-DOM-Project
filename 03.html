@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom cursor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy';
+            color: white;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        #main {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #cursor {
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            mix-blend-mode: difference;
+            border-radius: 50%;
+            position: absolute;
+            transition: all linear 0.2s;
+        }
+        h1 {
+            font-size: 9vw;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="cursor"></div>
+        <h1>Shubham Kr Singh</h1>
+    </div>
+    <script src="03script.js"></script>
+</body>
+</html>
